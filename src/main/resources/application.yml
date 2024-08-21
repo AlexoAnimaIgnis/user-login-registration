@@ -1,0 +1,16 @@
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+
+spring:
+  datasource:
+      url: jdbc:postgresql://localhost:5432/registration_app_db
+      username: registration_user
+      password: registration_user
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
